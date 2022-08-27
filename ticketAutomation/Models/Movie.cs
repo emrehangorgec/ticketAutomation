@@ -23,17 +23,17 @@ namespace ticketAutomation.Models
         {
             sessions = new List<Session>();
             DateTime currentDate = DateTime.Now;
-            TimeSpan ts = new TimeSpan(11, 30, 0);
-            for(int i = 0; i < 3; i++)
+            TimeSpan ts = new TimeSpan(10, 30, 0);
+            for (int i = 0; i < 3; i++)
             {
                 currentDate = currentDate + ts;
-                for(int k = 0; k < 3; k++)
+                for (int k = 0; k < 3; k++)
                 {
                     Session session = new Session();
                     session.date = currentDate.ToShortDateString();
                     session.time = currentDate.ToShortTimeString();
                     sessions.Add(session);
-                    currentDate = currentDate.AddHours(4);
+                    currentDate = currentDate.AddHours(3);
                 }
                 currentDate = currentDate.AddDays(1);
             }

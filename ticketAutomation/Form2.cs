@@ -24,43 +24,41 @@ namespace ticketAutomation
         Form1 form1;
         Movie selectedMovie;
         Session selectedSession;
-        public void ListDetail(int movieIndex, string time, string date)
+        public void ListDetail(int movieIndex, string _time, string _date)
         {
             selectedMovie = movies[movieIndex];
-            selectedSession = selectedMovie.sessions.Find(session => session.date == date &&
-            session.time == time);
-            labelTime.Text = $"{date}- {time}";
+            selectedSession = selectedMovie.sessions.Find(s => s.date == _date && s.time == _time);
+            labelTime.Text = $"{_date} - {_time}";
             labelMinute.Text = selectedMovie.minute;
             labelPrice.Text = selectedMovie.price.ToString();
             pictureBox1.Image = Image.FromFile(selectedMovie.picturePath);
             labelCategory.Text = selectedMovie.category.ToString();
-            checkSeatStatus();
+            CheckSeatStatus();
         }
-        private void checkSeatStatus()
+        private void CheckSeatStatus()
         {
-            foreach(Control item in groupSeats.Controls)
+            foreach (Control item in groupSeats.Controls)
             {
-                if(item is Button)
+                if (item is Button)
                 {
                     string row = item.Tag.ToString();
                     string number = item.Text;
                     item.Enabled = true;
-                    foreach (Seats seat  in selectedSession.seats)
+                    foreach (Seats seat in selectedSession.seats)
                     {
-                        if(seat.row ==row && seat.number == number)
+                        if (seat.row == row && seat.number == number)
                         {
                             if (seat.status)
                             {
-                                item.BackColor= Color.DarkRed;
+                                item.BackColor = Color.DarkRed;
                                 item.Enabled = false;
                             }
                             else
                             {
-                                item.BackColor= Color.LightGreen;
+                                item.BackColor = Color.LightGreen;
                             }
                             break;
                         }
-
                     }
                 }
             }

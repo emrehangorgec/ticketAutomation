@@ -61,11 +61,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rSmall = new System.Windows.Forms.RadioButton();
-            this.rMedium = new System.Windows.Forms.RadioButton();
             this.rLarge = new System.Windows.Forms.RadioButton();
+            this.rMedium = new System.Windows.Forms.RadioButton();
+            this.rSmall = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -445,16 +444,16 @@
             this.groupBox2.Text = "Popcorn";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // rSmall
+            // rLarge
             // 
-            this.rSmall.AutoSize = true;
-            this.rSmall.Location = new System.Drawing.Point(23, 61);
-            this.rSmall.Name = "rSmall";
-            this.rSmall.Size = new System.Drawing.Size(72, 24);
-            this.rSmall.TabIndex = 0;
-            this.rSmall.TabStop = true;
-            this.rSmall.Text = "Small";
-            this.rSmall.UseVisualStyleBackColor = true;
+            this.rLarge.AutoSize = true;
+            this.rLarge.Location = new System.Drawing.Point(314, 61);
+            this.rLarge.Name = "rLarge";
+            this.rLarge.Size = new System.Drawing.Size(73, 24);
+            this.rLarge.TabIndex = 0;
+            this.rLarge.TabStop = true;
+            this.rLarge.Text = "Large";
+            this.rLarge.UseVisualStyleBackColor = true;
             // 
             // rMedium
             // 
@@ -467,16 +466,16 @@
             this.rMedium.Text = "Medium";
             this.rMedium.UseVisualStyleBackColor = true;
             // 
-            // rLarge
+            // rSmall
             // 
-            this.rLarge.AutoSize = true;
-            this.rLarge.Location = new System.Drawing.Point(314, 61);
-            this.rLarge.Name = "rLarge";
-            this.rLarge.Size = new System.Drawing.Size(73, 24);
-            this.rLarge.TabIndex = 0;
-            this.rLarge.TabStop = true;
-            this.rLarge.Text = "Large";
-            this.rLarge.UseVisualStyleBackColor = true;
+            this.rSmall.AutoSize = true;
+            this.rSmall.Location = new System.Drawing.Point(23, 61);
+            this.rSmall.Name = "rSmall";
+            this.rSmall.Size = new System.Drawing.Size(72, 24);
+            this.rSmall.TabIndex = 0;
+            this.rSmall.TabStop = true;
+            this.rSmall.Text = "Small";
+            this.rSmall.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -486,15 +485,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(815, 106);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 16);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "label7";
             // 
             // label8
             // 
@@ -599,7 +589,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.labelMinute);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupSeats);
@@ -653,7 +642,6 @@
         private System.Windows.Forms.RadioButton rMedium;
         private System.Windows.Forms.RadioButton rSmall;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;

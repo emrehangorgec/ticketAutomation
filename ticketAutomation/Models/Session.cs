@@ -10,22 +10,26 @@ namespace ticketAutomation.Models
     {
         public Session()
         {
-            seats = new List<Seats>();
-            string[] rows = { "A", "B", "C", "D", "E"};
-            string[] numbers = { "1", "2", "3", "4", "5"};
-            foreach(string row in rows)
-            {
-                foreach(string number in numbers)
-                {
-                    Seats seat = new Seats(row, number);
-                    seats.Add(seat);
-                }
-            }
+            setSeats();
         }
 
         public string date { get; set; }
         public string time { get; set; }
         public List<Seats> seats { get; set; }
 
+        private void setSeats()
+        {
+            seats = new List<Seats>();
+            string[] rows = { "A", "B", "C", "D", "E" };
+            string[] numbers = { "1", "2", "3", "4", "5" };
+            foreach (string row in rows)
+            {
+                foreach (string number in numbers)
+                {
+                    Seats seat = new Seats(row, number);
+                    seats.Add(seat);
+                }
+            }
+        }
     }
 }
