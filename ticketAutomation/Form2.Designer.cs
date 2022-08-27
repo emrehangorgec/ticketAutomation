@@ -178,6 +178,7 @@
             this.button24.Tag = "e";
             this.button24.Text = "5";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button18
             // 
@@ -188,6 +189,7 @@
             this.button18.Tag = "d";
             this.button18.Text = "5";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button24_Click);
             // 
             // button12
             // 
@@ -198,6 +200,7 @@
             this.button12.Tag = "c";
             this.button12.Text = "5";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button24_Click);
             // 
             // button6
             // 
@@ -208,6 +211,7 @@
             this.button6.Tag = "b";
             this.button6.Text = "5";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button24_Click);
             // 
             // button25
             // 
@@ -218,6 +222,7 @@
             this.button25.Tag = "a";
             this.button25.Text = "5";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button24_Click);
             // 
             // button23
             // 
@@ -228,6 +233,7 @@
             this.button23.Tag = "e";
             this.button23.Text = "4";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button24_Click);
             // 
             // button17
             // 
@@ -238,6 +244,7 @@
             this.button17.Tag = "d";
             this.button17.Text = "4";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button24_Click);
             // 
             // button11
             // 
@@ -248,6 +255,7 @@
             this.button11.Tag = "c";
             this.button11.Text = "4";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button24_Click);
             // 
             // button5
             // 
@@ -258,6 +266,7 @@
             this.button5.Tag = "b";
             this.button5.Text = "4";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button24_Click);
             // 
             // button19
             // 
@@ -268,6 +277,7 @@
             this.button19.Tag = "a";
             this.button19.Text = "4";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button24_Click);
             // 
             // button22
             // 
@@ -278,6 +288,7 @@
             this.button22.Tag = "e";
             this.button22.Text = "3";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button24_Click);
             // 
             // button16
             // 
@@ -288,6 +299,7 @@
             this.button16.Tag = "d";
             this.button16.Text = "3";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button24_Click);
             // 
             // button10
             // 
@@ -298,6 +310,7 @@
             this.button10.Tag = "c";
             this.button10.Text = "3";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button24_Click);
             // 
             // button4
             // 
@@ -308,6 +321,7 @@
             this.button4.Tag = "b";
             this.button4.Text = "3";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button24_Click);
             // 
             // button13
             // 
@@ -318,6 +332,7 @@
             this.button13.Tag = "a";
             this.button13.Text = "3";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button24_Click);
             // 
             // button21
             // 
@@ -328,6 +343,7 @@
             this.button21.Tag = "e";
             this.button21.Text = "2";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button24_Click);
             // 
             // button15
             // 
@@ -338,6 +354,7 @@
             this.button15.Tag = "d";
             this.button15.Text = "2";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button24_Click);
             // 
             // button9
             // 
@@ -348,6 +365,7 @@
             this.button9.Tag = "c";
             this.button9.Text = "2";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button24_Click);
             // 
             // button3
             // 
@@ -358,6 +376,7 @@
             this.button3.Tag = "b";
             this.button3.Text = "2";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button24_Click);
             // 
             // button7
             // 
@@ -368,6 +387,7 @@
             this.button7.Tag = "a";
             this.button7.Text = "2";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button24_Click);
             // 
             // button20
             // 
@@ -378,6 +398,7 @@
             this.button20.Tag = "e";
             this.button20.Text = "1";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button24_Click);
             // 
             // button14
             // 
@@ -388,6 +409,7 @@
             this.button14.Tag = "d";
             this.button14.Text = "1";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button24_Click);
             // 
             // button8
             // 
@@ -398,6 +420,7 @@
             this.button8.Tag = "c";
             this.button8.Text = "1";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button24_Click);
             // 
             // button2
             // 
@@ -408,6 +431,7 @@
             this.button2.Tag = "b";
             this.button2.Text = "1";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button24_Click);
             // 
             // button1
             // 
@@ -418,6 +442,7 @@
             this.button1.Tag = "a";
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button24_Click);
             // 
             // label1
             // 
@@ -555,6 +580,7 @@
             this.buttonbuy.TabIndex = 5;
             this.buttonbuy.Text = "Buy";
             this.buttonbuy.UseVisualStyleBackColor = true;
+            this.buttonbuy.Click += new System.EventHandler(this.buttonbuy_Click);
             // 
             // buttonCancel
             // 
@@ -565,6 +591,7 @@
             this.buttonCancel.TabIndex = 5;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // labelTime
             // 
@@ -574,6 +601,7 @@
             this.labelTime.Size = new System.Drawing.Size(68, 16);
             this.labelTime.TabIndex = 6;
             this.labelTime.Text = "labelTime";
+            this.labelTime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form2
             // 

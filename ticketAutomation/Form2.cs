@@ -55,14 +55,13 @@ namespace ticketAutomation
                             }
                             else
                             {
-                                item.BackColor = Color.LightGreen;
+                                item.BackColor = Color.Brown;
                             }
                             break;
                         }
                     }
                 }
             }
-
         }
 
 
@@ -105,6 +104,75 @@ namespace ticketAutomation
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+        List<Seats> seats = new List<Seats>();
+        private void button24_Click(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            string row = button.Tag.ToString();
+            string number = button.Text;
+            Seats seat = selectedSession.seats.Find(s => s.number == number && s.row == row);
+            if (button.BackColor.Name != "Blue")
+            {
+                seats.Add(seat);
+                button.BackColor = Color.Blue;
+            }
+            else
+            {
+                seats.Remove(seat);
+                button.BackColor = Color.LightGreen;
+            }
+        }
+
+        private void buttonbuy_Click(object sender, EventArgs e)
+        {
+            if (seats.Count == 0)
+            {
+                MessageBox.Show("Please choose at least one seat.");
+                return;
+            }
+            ticket ticket = new ticket();
+            ticket.movieName = selectedMovie.movieName;
+            ticket.count = seats.Count;
+            ticket.sessionTime = $"{selectedSession.date} - {selectedSession.time}";
+            ticket.totalPrice = calculatePrice();
+            //foreach (Seats seat in seats)
+            //{
+            //    seat.status = true;
+            //}
+            MessageBox.Show(ticket.ToString());
+            firstPage();
+        }
+        private void firstPage()
+        {
+            rSmall.Checked = false;
+            rMedium.Checked = false;
+            rLarge.Checked = false;
+            seats.Clear();
+            this.Hide();
+            form1.Show();
+        }
+        private decimal calculatePrice()
+        {
+            decimal price = selectedMovie.price * seats.Count;
+            if (rSmall.Checked)
+            {
+                price += 3;
+            }
+            else if (rMedium.Checked)
+            {
+                price += 6;
+            }
+            else if (rLarge.Checked)
+            {
+                price += 9;
+            }
+            return price;
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            firstPage();
         }
     }
 }

@@ -80,9 +80,36 @@ namespace ticketAutomation
             int movieIndex = Convert.ToInt32(button.Tag);
             string sessionTime = button.Text;
             string sessionDate = labelDate.Text;
+            if(DateTime.Parse($"{sessionDate} {sessionTime}") < DateTime.Now)
+            {
+                MessageBox.Show("You have missed the selected session.\nPlease choose another one.");
+                return;
+            }
             this.Hide();
             form2.Show();
             form2.ListDetail(movieIndex,sessionTime,sessionDate);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            useDate = useDate.AddDays(-1);
+            labelDate.Text = useDate.ToShortDateString();
+            buttonNext.Enabled = true;
+            if(currentDate == useDate)
+            {
+                buttonPrevious.Enabled = false;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            useDate = useDate.AddDays(1);
+            labelDate.Text = useDate.ToShortDateString();
+            buttonPrevious.Enabled = true;
+            if (currentDate.AddDays(2) == useDate)
+            {
+                buttonNext.Enabled = false;
+            }
         }
     }
 }

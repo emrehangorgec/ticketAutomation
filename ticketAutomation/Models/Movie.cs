@@ -23,10 +23,10 @@ namespace ticketAutomation.Models
         {
             sessions = new List<Session>();
             DateTime currentDate = DateTime.Now;
-            TimeSpan ts = new TimeSpan(10, 30, 0);
+            TimeSpan ts = new TimeSpan(10,30,0);
             for (int i = 0; i < 3; i++)
             {
-                currentDate = currentDate + ts;
+                currentDate = currentDate.Date + ts;
                 for (int k = 0; k < 3; k++)
                 {
                     Session session = new Session();
