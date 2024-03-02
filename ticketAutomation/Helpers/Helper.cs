@@ -11,17 +11,9 @@ namespace ticketAutomation.Helpers
     {
         public static List<Movie> CreateMovies()
         {
-            string basePath = "C:/Users/Asus/Desktop/udemy/udemy_cs/Cinema Ticket Automation/ticketAutomation/ticketAutomation/Pictures/";
+            string basePath = "C:\\Users\\Asus\\Desktop\\Notlar\\yazılım\\udemy\\udemy_cs\\Cinema Ticket Automation\\ticketAutomation\\ticketAutomation\\Pictures\\";
             return new List<Movie>()
             {
-                new Movie()
-                {
-                    movieName = "The Notebook",
-                    category = Enums.Category.drama,
-                    minute = "2 hours 15 minutes",
-                    price =40,
-                    picturePath = basePath + "theNotebook.jpg"
-                },
                 new Movie()
                 {
                     movieName = "Big Lebowski",
@@ -29,6 +21,14 @@ namespace ticketAutomation.Helpers
                     minute = "2 hours 16 minutes",
                     price =40,
                     picturePath = basePath + "bigLebowski.jpg"
+                },
+                new Movie()
+                {
+                    movieName = "The Notebook",
+                    category = Enums.Category.drama,
+                    minute = "2 hours 15 minutes",
+                    price =40,
+                    picturePath = basePath + "theNotebook.jpg"
                 },
                 new Movie()
                 {

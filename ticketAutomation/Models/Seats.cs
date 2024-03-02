@@ -12,7 +12,7 @@ namespace ticketAutomation.Models
         public Seats(string _row, string _number)
         {
             row = _row; 
-            number = _number;
+            number = _number;   
         }
         public string row { get; set; }
         public string number { get; set; }

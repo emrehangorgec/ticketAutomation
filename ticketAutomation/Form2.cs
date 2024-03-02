@@ -136,10 +136,10 @@ namespace ticketAutomation
             ticket.count = seats.Count;
             ticket.sessionTime = $"{selectedSession.date} - {selectedSession.time}";
             ticket.totalPrice = calculatePrice();
-            //foreach (Seats seat in seats)
-            //{
-            //    seat.status = true;
-            //}
+            foreach (Seats seat in seats)
+            {
+                seat.status = true;
+            }
             MessageBox.Show(ticket.ToString());
             firstPage();
         }

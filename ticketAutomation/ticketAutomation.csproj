@@ -99,6 +99,7 @@
     <Content Include="Pictures\bigLebowski.jpg" />
     <Content Include="Pictures\goneGirl.jpg" />
     <Content Include="Pictures\intoTheWild.jpg" />
+    <Content Include="Pictures\mulhollandDrive.jpg" />
     <Content Include="Pictures\starWars.jpg" />
     <Content Include="Pictures\theNotebook.jpg" />
   </ItemGroup>

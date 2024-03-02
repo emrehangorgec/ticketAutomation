@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +46,8 @@ namespace ticketAutomation
                 picture.Location = new Point(x, y);
                 picture.Size = pictureSize;
                 picture.Image = Image.FromFile(movies[i].picturePath);
+                picture.Image = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, movies[i].picturePath));
+
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
                 this.Controls.Add(picture);
                 
