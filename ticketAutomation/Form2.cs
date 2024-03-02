@@ -13,7 +13,7 @@ namespace ticketAutomation
 {
     public partial class Form2 : Form
     {
-        public Form2(List<Movie> _movies, Form1 _form1)
+        public Form2(List<Movie> _movies, Booking _form1)
         {
             InitializeComponent();
             movies = _movies;
@@ -21,7 +21,7 @@ namespace ticketAutomation
 
         }
         List<Movie> movies;
-        Form1 form1;
+        Booking form1;
         Movie selectedMovie;
         Session selectedSession;
         public void ListDetail(int movieIndex, string _time, string _date)
@@ -173,6 +173,11 @@ namespace ticketAutomation
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             firstPage();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

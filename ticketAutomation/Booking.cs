@@ -13,9 +13,9 @@ using ticketAutomation.Models;
 
 namespace ticketAutomation
 {
-    public partial class Form1 : Form
+    public partial class Booking : Form
     {
-        public Form1()
+        public Booking()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace ticketAutomation
         }
         private void ListControls()
         {
-            Size pictureSize = new Size(300, 180);
+            Size pictureSize = new Size(200, 180);
             Size buttonSize = new Size(90, 40);
             int x = 50; int y = 100;
             int xIncrement = 400;

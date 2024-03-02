@@ -647,6 +647,7 @@
             this.Controls.Add(this.groupSeats);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupSeats.ResumeLayout(false);
             this.groupSeats.PerformLayout();
             this.groupBox2.ResumeLayout(false);

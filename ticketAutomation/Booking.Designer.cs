@@ -1,6 +1,6 @@
 ﻿namespace ticketAutomation
 {
-    partial class Form1
+    partial class Booking
     {
         /// <summary>
         /// Required designer variable.
